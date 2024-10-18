@@ -1,29 +1,16 @@
-[Webserver] - The most unoriginal name for a webserver program!
 
-This software is just simple, a small webserver for hosting files and 
-html content over HTTP. The language used is C++, and for socket networking
-the Windows Socket API is used.
+Certainly! Here's a formal version of the text:
 
-A few changes are going to be made in the close future:
+Webserver - A Simple Webserver Program
 
-- A "routes" function will be added (inspired by ruby on rails) so that
-	the user of this program can manualy route URL's to his/her wanted
-	html file. Ex: /hello/about is routed to the /about.html file.
-	I've pute some though into it, and not sure how flexible i want
-	this to be. If it should be able to route entire folders or just
-	simple files...
+This software is a small webserver designed to host files and HTML content over HTTP. It is developed in C++ and uses the Windows Socket API for socket networking.
 
-- The handelig of "is this a good request?" part, and the status-codes
-	that are given is a little to static and maybe not flexible enough.
-	This has been worked on some, but it is stil on 200 OK / 204 NO CONTENT
-	or 404 NOT FOUND...
+Planned updates include the following:
 
-And also, as an "way out there in the future" i would like to be able
-to add support for a really simple "dynamic content" system. Say for
-example that the user can write something like <% variable_name %> in
-the HTML code, and get the webserver to replace that with an actuall variable.
-And maybe even a SQLlite interface could be made.
+A "routes" function inspired by Ruby on Rails will be added. This will allow users to manually route URLs to their desired HTML files. For example, "/hello/about" could be routed to "/about.html." Flexibility is still being considered in terms of whether it should route entire folders or just specific files.
 
-Well all in all, this code is a fun project to learn about, windows network
-programming, HTTP, and further down the line: SQLlite and handelig dynamic
-content.
+Improvements will be made to the handling of HTTP status codes. Currently, responses are limited to 200 OK, 204 NO CONTENT, or 404 NOT FOUND. Future updates will aim to make this more dynamic and flexible.
+
+In the long term, the addition of support for dynamic content generation is being considered. This feature would allow users to include variables in HTML (e.g., <% variable_name %>) and have the server replace them with actual values. A SQLite interface may also be integrated to support this functionality.
+
+Overall, this project is a learning tool for Windows network programming, HTTP, and potentially SQLite and dynamic content handling in the future.
